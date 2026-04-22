@@ -1,0 +1,196 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #2b6777;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8d8e4;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1b4965, #2b7a78);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/* SECTION */
+section {
+    padding: 30px;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+button {
+    background-color: #52ab98;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b6777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+/* NAVBAR HOVER EFFECT */
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #52ab98;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* BUTTON HOVER ANIMATION */
+button {
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* BACK TO TOP BUTTON */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #2b6777;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+/* all images stacked on top of each other */
+.slide {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* visible image */
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* ===== STUDY TOOL CARDS ===== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.study-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1b4965;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.study-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.study-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.study-card:hover {
+    transform: translateY(-6px);
+    background: #2b7a78;
+    color: white;
+}
+
+.study-card:hover p {
+    color: #e0f7f6;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .study-card {
+        text-align: center;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Year 13 Subjects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <style>
+        /* Extra improvement for better card layout */
+        .subjects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin: 15px;
+            padding: 25px;
+            width: 200px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background: #62b6cb;
+            color: white;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+        }
+
+        .card:hover a {
+            color: white;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            font-size: 18px;
+            background: #1b4965;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="studytools.html">Study Tools</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>📚 Year 13 Subjects</h1>
+    <p>Physics • Maths • English • Computer Studies • Technical Drawing</p>
+</header>
+
+<!-- SUBJECT CARDS -->
+<section class="subjects-container">
+
+    <div class="card">
+        <a href="maths.html">🟢 Mathematics</a>
+        <p>Calculus, Algebra, Statistics</p>
+    </div>
+
+    <div class="card">
+        <a href="english.html">🔴 English</a>
+        <p>Essay Writing & Literature</p>
+    </div>
+
+    <div class="card">
+        <a href="physics.html">🔵 Physics</a>
+        <p>Forces, Energy, Waves</p>
+    </div>
+
+    <div class="card">
+        <a href="techdrawing.html">⚫ Technical Drawing</a>
+        <p>Orthographic & Isometric</p>
+    </div>
+
+    <div class="card">
+        <a href="computer.html">🟠 Computer Studies</a>
+        <p>Coding, Databases, Systems</p>
+    </div>
+
+</section>
+
+<!-- BACK TO TOP BUTTON -->
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+function topFunction() {
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

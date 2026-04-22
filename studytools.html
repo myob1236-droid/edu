@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Year 13 Study Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="studytools.html">Study Tools</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>📚 Year 13 Study Tools</h1>
+    <p>Past Papers • Textbooks • Exam Preparation</p>
+</header>
+
+<!-- 📄 PAST PAPERS (FIRST) -->
+<div class="tool-section">
+
+    <h2>📄 Past Exam Papers</h2>
+    <p>Practice real Fiji Year 13 exam questions under timed conditions.</p>
+
+    <div class="card-grid">
+
+        <a class="study-card" href="maths-pastpapers.html">
+            <h3>🟢 Mathematics</h3>
+            <p>Calculus • Algebra • Stats</p>
+        </a>
+
+        <a class="study-card" href="english-pastpapers.html">
+            <h3>🔴 English</h3>
+            <p>Essays & Comprehension</p>
+        </a>
+
+        <a class="study-card" href="physics-pastpapers.html">
+            <h3>🔵 Physics</h3>
+            <p>Forces • Waves • Energy</p>
+        </a>
+
+        <a class="study-card" href="computer-pastpapers.html">
+            <h3>🟠 Computer Studies</h3>
+            <p>Programming & Systems</p>
+        </a>
+
+        <a class="study-card" href="techdrawing-pastpapers.html">
+            <h3>⚫ Technical Drawing</h3>
+            <p>Orthographic & Isometric</p>
+        </a>
+
+    </div>
+</div>
+
+<!-- 📚 TEXTBOOKS (SECOND) -->
+<div class="tool-section">
+
+    <h2>📚 Textbooks & Revision Notes</h2>
+    <p>Download official-style notes and revision materials.</p>
+
+   <div class="card-grid">
+
+    <a class="study-card" href="resources/maths.pdf" download>
+        <h3>🟢 Maths</h3>
+        <p>Full Year 13 Notes</p>
+    </a>
+
+    <a class="study-card" href="resources/english.pdf" download>
+        <h3>🔴 English</h3>
+        <p>Essay Writing Guide</p>
+    </a>
+
+    <a class="study-card" href="resources/physics.pdf" download>
+        <h3>🔵 Physics</h3>
+        <p>Complete Revision Pack</p>
+    </a>
+
+    <a class="study-card" href="resources/computer.pdf" download>
+        <h3>🟠 Computer Studies</h3>
+        <p>Programming Notes</p>
+    </a>
+
+    <a class="study-card" href="resources/techdrawing.pdf" download>
+        <h3>⚫ Technical Drawing</h3>
+        <p>Orthographic & Isometric Revision Pack</p>
+    </a>
+
+</div> 
+
+
+<!-- 💡 STUDY TIPS (THIRD) -->
+<div class="tool-section">
+
+    <h2>💡 Study Tips for Year 13 Exams</h2>
+
+    <ul>
+        <li>📌 Do past papers under timed conditions</li>
+        <li>📌 Focus on weak topics first</li>
+        <li>📌 Study in short 30–45 min sessions</li>
+        <li>📌 Use active recall instead of rereading notes</li>
+        <li>📌 Mark your answers using marking guides</li>
+        <li>📌 Revise daily, not last minute</li>
+    </ul>
+
+</div>
+
+</body>
+</html>
+
+</section>
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+function topFunction() {
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

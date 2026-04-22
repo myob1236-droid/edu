@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+    window.onload = function () {
+
+        let slides = document.getElementsByClassName("slide");
+        let index = 0;
+
+        function showNext() {
+            slides[index].classList.remove("active");
+            index = (index + 1) % slides.length;
+            slides[index].classList.add("active");
+        }
+
+        setInterval(showNext, 3000);
+    };
+    </script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="studytools.html">Study Tools</a>
+    <a href="community.html">Community</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+<!-- HERO -->
+<header>
+
+    <div class="carousel">
+        <img src="images/02.webp" class="slide active">
+        <img src="images/03.jpg" class="slide">
+        <img src="images/04.jpeg" class="slide">
+    </div>
+
+    <h1>Learn Smart. Grow Strong.</h1>
+    <p>Your all-in-one Year 13 Fiji Student Learning Hub</p>
+
+</header>
+
+<!-- INTRO -->
+<section>
+
+    <h2>📌 About This Hub</h2>
+
+    <p>
+        The Student Hub is designed to support Year 13 students in Fiji with structured
+        learning materials, past exam papers, revision notes, and study tools.
+        It is built to help students prepare effectively for final examinations.
+    </p>
+
+</section>
+
+<!-- WHAT YOU GET -->
+<section>
+
+    <h2>🎯 What You Will Find Here</h2>
+
+    <div class="card">
+
+        <ul>
+            <li>📚 Subject resources for Maths, English, Physics, Computer Studies, and Technical Drawing</li>
+            <li>📄 Past Year 13 exam papers for practice</li>
+            <li>🧠 Study tools like revision notes and planners</li>
+            <li>📥 Downloadable textbooks and worksheets</li>
+            <li>💡 Study tips and exam strategies</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- FEATURED -->
+
+
+<section>
+
+    <h2>⭐ Featured Resource</h2>
+
+    <div class="card">
+
+        <h3>🔥 Study Planner</h3>
+        <p>
+            Stay organised and improve your revision efficiency with our structured study planner
+            designed specifically for Year 13 exam preparation.
+        </p>
+
+        <button onclick="window.location.href='studytools.html'">
+            Go to Study Tools
+        </button>
+
+    </div>
+
+</section>
+
+<!-- SUBJECT PREVIEW -->
+<section>
+
+    <h2>📚 Subjects Covered</h2>
+
+    <div class="card">
+
+        <p>
+            This hub includes full revision support for:
+            <b>Mathematics, English, Physics, Computer Studies, and Technical Drawing.</b>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MOTIVATION -->
+<section>
+
+    <h2>🚀 Student Motivation</h2>
+
+    <div class="card">
+
+        <p>
+            Success in Year 13 comes from consistent revision, practice, and discipline.
+            Use this hub daily to improve your understanding and exam readiness.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- TOP BUTTON -->
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+<script>
+let topBtn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+};
+
+function topFunction() {
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
